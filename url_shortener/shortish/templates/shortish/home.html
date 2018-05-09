@@ -1,0 +1,11 @@
+{% extends 'shortish/base.html' %}
+
+{%  block content %}
+    <h1>{{ title }}</h1>
+    <p class="lead"> Shorten the URL </p>
+    <br><br>
+    <form method='POST' action='.'> {% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn btn-primary" type='submit' value='Shorten &raquo;'>
+    </form>
+{%  endblock content %}

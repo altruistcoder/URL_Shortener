@@ -1,0 +1,14 @@
+{%  extends "shortish/base.html" %}
+
+{%  block title %}
+    {{ object.shortcode }} | URL Shortened
+{%  endblock title %}
+
+{%  block content %}
+        <h1> Created! </h1>
+        <br>
+        <p>URL Entered: <br> <a class="btn-link" href="{{ object.url }}">{{ object.url }}</a></p>
+        <p>Shortened URL: <br> <a class="btn btn-primary btn-link" href="{{ object.get_short_url }}">{{ object.get_short_url }}</a></p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <a class="btn btn-info" href="/"> Back to Homepage </a>
+{% endblock content %}
