@@ -41,4 +41,4 @@ Shortish is a URL shortening webapp which is used to shorten any URL. Shortish a
   python manage.py migrate
   python manage.py runserver
 ```
-8. That's it, Shortish is ready. You can run it at [127.0.0.1:8000] (127.0.0.1:8000).
+8. That's it, Shortish is ready. You can run it at [http://127.0.0.1:8000/] (http://127.0.0.1:8000/).
