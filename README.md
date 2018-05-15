@@ -1,15 +1,15 @@
 # SHORTISH
 
-Shortish is a URL shortening webapp which is used to shorten any url.
+Shortish is a URL shortening webapp which is used to shorten any URL. Shortish also gives you a choice to customize your shortened URLs.
 
 ## Instructions
 
-1. Get the source code on your pc via git.
+1. Get the source code on your pc via git and navigate inside the folder through your terminal.
 
 ```
   git clone https://github.com/altruistcoder/URL_Shortener
 ```
-2. Create a virtual environment.
+2. Create a virtual environment and navigate inside it.
 
 ```
   virtualenv venv
@@ -21,7 +21,7 @@ Shortish is a URL shortening webapp which is used to shorten any url.
 ```
   For mac users:
 
-    source venv/bin/activate  
+    source bin/activate  
 
   For windows users:
 
@@ -41,4 +41,4 @@ Shortish is a URL shortening webapp which is used to shorten any url.
   python manage.py migrate
   python manage.py runserver
 ```
-8. That's it, shortish is ready. You can run it at [127.0.0.1:8000/](127.0.0.1:8000/).
+8. That's it, Shortish is ready. You can run it at [127.0.0.1:8000] (127.0.0.1:8000).
