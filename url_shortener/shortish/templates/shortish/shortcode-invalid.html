@@ -1,0 +1,10 @@
+{%  extends "shortish/base.html" %}
+
+{%  block title %}
+    {{ object.shortcode }} | {{ block.super }}
+{%  endblock title %}
+
+{%  block content %}
+        <h4> Shortcode Already Taken! </h4>
+        <h4> Enter a different Shortcode. </h4>
+{% endblock content %}

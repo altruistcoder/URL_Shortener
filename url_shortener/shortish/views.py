@@ -26,7 +26,26 @@ class HomeView(View):
         template = "shortish/home.html"
         if form.is_valid():
             new_url = form.cleaned_data.get("url")
-            obj, created = ShortishURL.objects.get_or_create(url=new_url)
+            new_shortcode = form.cleaned_data.get("shortcode")
+            if new_shortcode == "" or new_shortcode is None:
+                q_set = ShortishURL.objects.filter(url__iexact=new_url)
+                if q_set.count() != 0:
+                    obj = q_set.first()
+                    created = False
+                else:
+                    obj, created = ShortishURL.objects.get_or_create(url=new_url)
+            else:
+                q_s = ShortishURL.objects.filter(shortcode__iexact=new_shortcode).exists()
+                print(q_s)
+                if q_s:
+                    obj = ShortishURL.objects.get(shortcode=new_shortcode)
+                    created = False
+                    print(obj.url)
+                    if obj.url != new_url:
+                        return render(request, "shortish/shortcode-invalid.html")
+                else:
+                    obj = ShortishURL.objects.create(url=new_url, shortcode=new_shortcode)
+                    created = True
             context = {
                 "object": obj,
                 "created": created,
@@ -47,4 +66,3 @@ class URLRedirectView(View):
         obj = qs.first()
         print(ClickEvent.objects.create_event(obj))
         return HttpResponseRedirect(obj.url)
-
