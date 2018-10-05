@@ -26,6 +26,10 @@ Shortish is a URL shortening webapp which is used to shorten any URL. Shortish a
   For windows users:
 
     .\Scripts\activate
+
+  For Linux users:
+
+    source activate <environment-name>
 ```
 
 5. Now, install python dependencies.
@@ -41,4 +45,4 @@ Shortish is a URL shortening webapp which is used to shorten any URL. Shortish a
   python manage.py migrate
   python manage.py runserver
 ```
-8. That's it, Shortish is ready. You can run it at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+8. Shortish is ready for use. You can run it at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
