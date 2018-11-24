@@ -33,10 +33,10 @@ class HomeView(View):
                     obj = q_set.first()
                     created = False
                 else:
-                    obj, created = ShortishURL.objects.get_or_create(url=new_url)
+                    obj = ShortishURL.objects.create(url=new_url)
+                    created = True
             else:
                 q_s = ShortishURL.objects.filter(shortcode__iexact=new_shortcode).exists()
-                print(q_s)
                 if q_s:
                     obj = ShortishURL.objects.get(shortcode=new_shortcode)
                     created = False

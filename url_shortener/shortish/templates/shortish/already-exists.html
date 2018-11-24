@@ -11,7 +11,7 @@
         {% if object.clickevent %}
             <p>Count: {{ object.clickevent.count }}</p>
         {% endif %}
-        <p>Shortened URL: <br> <a class="btn btn-primary btn-link" href="{{ object.get_short_url }}">{{ object.get_short_url }}</a></p>
+        <p>Shortened URL: <br> <a class="btn btn-primary btn-link" href="{{ object.get_short_url }}">sc.in:8000/{{ object.shortcode }}</a></p>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <a class="btn btn-info" href="/"> Back to Homepage </a>
 {% endblock content %}
