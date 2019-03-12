@@ -2,7 +2,7 @@
 
 Shortish is a URL shortening webapp which is used to shorten any URL. Shortish also gives you a choice to customize your shortened URLs.
 
-![Picture Here](./Shortish.png)
+![Picture Here](URL_Shortener/Shortish.png)
 
 ## Instructions
 
