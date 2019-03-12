@@ -2,6 +2,8 @@
 
 Shortish is a URL shortening webapp which is used to shorten any URL. Shortish also gives you a choice to customize your shortened URLs.
 
+![Picture Here](https://github.com/altruistcoder/URL_Shortener/blob/master/Shortish.png)
+
 ## Instructions
 
 1. Get the source code on your pc via git and navigate inside the folder through your terminal.
