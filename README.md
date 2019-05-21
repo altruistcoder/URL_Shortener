@@ -2,6 +2,8 @@
 
 Shortish is a URL shortening webapp which is used to shorten any URL. Shortish also gives you a choice to customize your shortened URLs.
 
+You can see the live version of this application [here](https://shortish.herokuapp.com/).
+
 ![Picture Here](./Shortish.png)
 
 ## Instructions
